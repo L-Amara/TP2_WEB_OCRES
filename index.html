@@ -2,40 +2,64 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
     <title>Rdio - Luke Chesser</title>
 
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/global.css" />
 
+    <!-- Step 1 -->
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- So that the dropdown menu works -->
+    <!--  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+ -->
 </head>
 
 <body>
-    <div class="container">
 
-        <header>
-            <div class="wrapper">
-                <div class="logo-search">
-                    <img class="pull-left" src="img/logo.png" />
-                </div>
 
-                <form method="POST" action="index.html">
-                    <input type="search" required class="search">
-                    <input type="submit" name="submit" value="Rechercher" class="submit">
-                </form>
-                <div class="user">
-                    <a href="#">Luke Chesser</a>
+
+    <header>
+        <div class="wrapper">
+            <div class="logo-search">
+                <img class="pull-left" src="img/logo.png" />
+            </div>
+
+            <form method="POST" action="index.html">
+                <input type="search" required class="search">
+                <input type="submit" name="submit" value="Rechercher" class="submit">
+            </form>
+            <!-- Step 5.3 -->
+            <div class="user">
+                <div class="btn-group">
+                    <a class="nav-link" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            Luke Chesser
+                        </a>
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Edit my profile</a>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
                 </div>
             </div>
-        </header>
+
+        </div>
+    </header>
+
+    <!--Step 2-->
+    <div class="container">
 
         <div class="row">
+
+            <!-- Step 3 -->
             <!-- Menu -->
-            <div class="col-2">
-                <aside>
+            <div class="col-3">
+
+                <!-- Step 5.1 -->
+                <aside class="d-none d-md-block">
                     <h3>Browse</h3>
                     <nav class="browse">
                         <ul class="main">
@@ -54,8 +78,9 @@
                     </nav>
                 </aside>
             </div>
+
             <!-- Partie principale -->
-            <div class="col-10">
+            <div class="col-9">
                 <main>
                     <header>
                         <div class="name-photo">
@@ -93,12 +118,7 @@
                     <section id="albums">
                         <div class="row">
 
-
-
-                            <!-- col-sm-push-8 -->
-
-
-
+                            <!-- Step 4 -->
                             <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
                                 <article>
                                     <figure>
@@ -158,9 +178,9 @@
                                 <article>
                                     <figure>
                                         <img src="img/album/album_06.png" />
-                                        <figcaption>Native (Deluxe)</figcaption>
+                                        <figcaption>Pedestrian Verse</figcaption>
                                     </figure>
-                                    <div class="artist">OneRepublic</div>
+                                    <div class="artist">Frightened Rabbit</div>
                                     <div class="count">17 songs</div>
                                 </article>
                             </div>
@@ -169,10 +189,10 @@
                                 <article>
                                     <figure>
                                         <img src="img/album/album_07.png" />
-                                        <figcaption>Wax Wings</figcaption>
+                                        <figcaption>Random Access Memories</figcaption>
                                     </figure>
-                                    <div class="artist">Joshua Radin</div>
-                                    <div class="count">11 songs</div>
+                                    <div class="artist">Daft Punk</div>
+                                    <div class="count">13 songs</div>
                                 </article>
                             </div>
 
@@ -180,21 +200,20 @@
                                 <article>
                                     <figure>
                                         <img src="img/album/album_08.png" />
-                                        <figcaption>Modern Vampires of th...</figcaption>
+                                        <figcaption>The Sparrow and the Crow</figcaption>
                                     </figure>
-                                    <div class="artist">Vampire Weekend</div>
-                                    <div class="count">12 songs</div>
+                                    <div class="artist">William Fitzsimmons</div>
+                                    <div class="count">13 songs</div>
                                 </article>
-
                             </div>
 
                             <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
                                 <article>
                                     <figure>
                                         <img src="img/album/album_09.png" />
-                                        <figcaption>Night Visions</figcaption>
+                                        <figcaption>Paper Doll</figcaption>
                                     </figure>
-                                    <div class="artist">Imagine Dragons</div>
+                                    <div class="artist">John Mayer</div>
                                     <div class="count">11 songs <span class="explicit">EXPLICIT</span></div>
                                 </article>
                             </div>
@@ -203,20 +222,24 @@
                                 <article>
                                     <figure>
                                         <img src="img/album/album_10.png" />
-                                        <figcaption>Trouble Will Find Me</figcaption>
+                                        <figcaption>Pacific Coast Eyes</figcaption>
                                     </figure>
-                                    <div class="artist">The National</div>
-                                    <div class="count">13 songs</div>
+                                    <div class="artist">Graham Colton</div>
+                                    <div class="count">6 songs</div>
                                 </article>
                             </div>
-
                         </div>
-                    </section>
 
+                    </section>
                 </main>
             </div>
         </div>
     </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
