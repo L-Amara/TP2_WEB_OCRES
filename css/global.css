@@ -278,7 +278,7 @@ nav a.history {
 
 /*Step 5.2*/
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 770px) {
     .links {
         text-align: right;
     }
