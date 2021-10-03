@@ -54,7 +54,7 @@ main article {
 h3 {
     color: #b8c3c9;
     text-transform: uppercase;
-    font-size: 0.8125em !important;
+    font-size: 0.7125em !important;
     font-weight: normal;
     margin-bottom: 10px;
 }
@@ -302,7 +302,7 @@ nav a.history {
 
 @media (min-width: 450px) {
     html {
-        font-size: 0.5em;
+        font-size: 0.8em;
     }
 }
 
@@ -314,6 +314,6 @@ nav a.history {
 
 @media (min-width: 1400px) {
     html {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 }
